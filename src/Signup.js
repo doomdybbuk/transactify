@@ -15,6 +15,7 @@ import { auth } from './firebase';
 import {
   RecaptchaVerifier,
   signInWithPhoneNumber,
+  EmailAuthProvider,
 } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import logo from './assets/logo.png'; // Import your logo
@@ -25,6 +26,7 @@ const Signup = () => {
   const [OTP, setOTP] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const [password, setPassword] = useState('');
 
   const setUpRecaptcha = () => {
     if (!window.recaptchaVerifier) {

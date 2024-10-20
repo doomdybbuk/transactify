@@ -2,13 +2,13 @@ import {initializeApp} from 'firebase/app';
 import {getAuth} from 'firebase/auth';
 
 const firebaseConfig={
-    apiKey: 'YOUR_FIREBASE_API_KEY',
-    authDomain: 'YOUR_FIREBASE_AUTH_DOMAIN',
-    projectId: 'YOUR_FIREBASE_PROJECT_ID',
-    storageBucket: 'YOUR_FIREBASE_STORAGE_BUCKET',
-    messagingSenderId: 'YOUR_FIREBASE_MESSAGING_SENDER_ID',
-    appId: 'YOUR_FIREBASE_APP_ID',
+    apiKey: "AIzaSyDBJtzHUpSdVe8z7IRGA8Rb_90J_hSO26U",
+    authDomain: "transactify-49691.firebaseapp.com",
+    projectId: "transactify-49691",
+    storageBucket: "transactify-49691.appspot.com",
+    messagingSenderId: "1044317317083",
+    appId: "1:1044317317083:web:8d4b688362988f953be9fe",
+    measurementId: "G-CB8NXDLP3F"
 };
-
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
